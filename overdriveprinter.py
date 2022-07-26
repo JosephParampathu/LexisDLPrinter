@@ -19,7 +19,7 @@ import shutil
 import glob
 
 #the current book id to download
-book_ID = "8979743"
+book_ID = "XXXXXXX"
 directory = "/Users/josephparampathu/Desktop/Programming/OverdriveFiles/" + str(book_ID)
 try:
     os.makedirs(directory)
@@ -44,8 +44,8 @@ driver = webdriver.Chrome(options=chrome_options, service=Service(ChromeDriverMa
 
 
 # Overdrive credentials, password, account; login to OCPLL page
-account = "25140000001086"
-password = "para"
+account = "XXXXXXX"
+password = "XXXXXXX"
 driver.get("https://lexisdl.com/welcome/login/ocpll?origination=/library/ocpll/open")
 
 #wait for page to load
@@ -167,5 +167,3 @@ while (iteration < 2 or not (os.path.getsize(file1)==os.path.getsize(file2))):
         file2 = list_of_files[-2]
     print("iteration: " + str(iteration) + "file1: " + str(file1) + "file2: " + str(file2))
     iteration += 1
-
-#move and rename section file
